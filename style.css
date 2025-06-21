@@ -1,0 +1,269 @@
+/* =============== CÀI ĐẶT CHUNG =============== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* =============== NAVBAR =============== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+}
+
+/* =============== GIỚI THIỆU =============== */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #007bff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.intro-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* =============== KỸ NĂNG =============== */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.skill-icon {
+  width: 120px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.skill-icon:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-icon p {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.skill-icon span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* =============== DỰ ÁN =============== */
+#projects {
+  background-color: #eef4fb;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card h4 {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.project-card p {
+  margin: 0 15px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.project-card .btn {
+  margin: 0 15px 15px;
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.project-card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* =============== LIÊN HỆ =============== */
+.contact-card {
+  max-width: 500px;
+  margin: 30px auto 0;
+  padding: 30px;
+  background-color: #f2f8ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.contact-info li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* =============== RESPONSIVE =============== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .skills-grid, .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-icon, .project-card {
+    width: 80%;
+  }
+} 
+/* CV */
+.btn-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #1e7e34;
+}

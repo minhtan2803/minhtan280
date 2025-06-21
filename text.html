@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Phạm Minh Tân</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- navbar -->
+     <header>  
+        <nav class="navbar">
+            <h1 class="logo">Phạm Minh Tân</h1>
+            <ul class="nav-links">
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#skills">Kỹ Năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+     </header>
+     <section id="about" data-aos="fade-up"> 
+        <div class="container about">
+            <img src="suy.jpg" alt="Ảnh đại diện" class="avatar">
+            <div class="intro-text">
+                <h2>Xin chào, mình là Phạm Minh Tân</h2>
+                <p>Mình là một lập trình viên web đang bắt đầu hành trình xây dựng sản phẩm thực tế. Mục tiêu của mình là học tốt HTML,CSS,JAVASCRIPT và trở thành một lập trình viên front-end giỏi.</p>
+            </div>
+        </div>
+     </section>
+    <section id="skills" data-aos="fade-right">
+  <div class="container">
+    <h2>Kỹ năng</h2>
+
+    <h3>Frontend</h3>
+    <div class="skills-grid">
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <p>HTML</p>
+        <span>85%</span>
+      </div>
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <p>CSS</p>
+        <span>75%</span>
+      </div>
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+        <p>JavaScript</p>
+        <span>65%</span>
+      </div>
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+        <p>Bootstrap</p>
+        <span>60%</span>
+      </div>
+    </div>
+
+    <h3>Backend</h3>
+    <div class="skills-grid">
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+        <p>PHP</p>
+        <span>50%</span>
+      </div>
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel">
+        <p>Laravel</p>
+        <span>45%</span>
+      </div>
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+        <p>Node.js</p>
+        <span>40%</span>
+      </div>
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        <p>MongoDB</p>
+        <span>35%</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects" data-aos="fade-up">
+  <div class="container">
+    <h2>Dự án</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x180" alt="Dự án 1">
+        <h4>Portfolio Cá Nhân</h4>
+        <p>Trang web giới thiệu bản thân sử dụng HTML & CSS thuần.</p>
+        <a href="#" class="btn">Xem chi tiết</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x180" alt="Dự án 2">
+        <h4>Todo App</h4>
+        <p>Ứng dụng ghi chú công việc đơn giản với JavaScript.</p>
+        <a href="#" class="btn">Xem chi tiết</a>
+      </div>
+
+      <!-- Bạn có thể thêm bao nhiêu dự án cũng được -->
+      
+    </div>
+  </div>
+</section>
+<section id="contact" data-aos="fade-left">
+   <div class="container">
+    <h2>Liên hệ</h2>
+
+    <div class="contact-card">
+      <ul class="contact-info">
+        <li><i class="fas fa-envelope"></i> phamminhtan280304@gmail.com</li>
+        <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/minhtan.pham.1069" target="_blank">Facebook</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/minhtan2803" target="_blank">GitHub</a></li>
+      </ul>
+
+      <a href="pham-minh-tan-cv.pdf" class="btn-download" download>
+        <i class="fas fa-download"></i> Tải CV của tôi
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
